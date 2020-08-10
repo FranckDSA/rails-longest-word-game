@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="display">
+    <% @lettersten.each do |letter| %>
+      <div class="letter"><%= "#{letter.upcase}" %></div>
+    <% end %>
+  </div>
+
+
+
+  <div class="form-tunning">
+    <form action="/score">
+    <input type="text" name="word">
+    <input type="submit" value="Try!">
+  </div>
+</div>
